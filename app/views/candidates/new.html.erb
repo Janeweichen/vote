@@ -1,0 +1,26 @@
+<h1>create candidates page</h1>
+
+<%= form_for(@candidate) do |f|%>
+    <div>
+    <%= f.label :name%>
+    <%= f.text_field :name%>
+    </div>
+
+    <div>
+    <%= f.label :age%>
+    <%= f.text_field :age%>
+    </div>
+
+    <div>
+    <%= f.label :party%>
+    <%= f.text_field :party%>
+    </div>
+
+    <div>
+    <%= f.label :politics%>
+    <%= f.text_area :politics%>
+    </div>
+
+    <%= f.submit %>
+
+<% end %>
